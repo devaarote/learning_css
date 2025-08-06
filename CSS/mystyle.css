@@ -1,0 +1,14 @@
+h3{
+    font-size: 90px;
+    color: chocolate;
+    background-color: cyan;
+}
+h2{
+    font-size: 90px !important;
+    color: cornflowerblue !important;
+}
+p{
+    color: deeppink;
+    background-color: darkslategray;
+    font: optional;
+}
