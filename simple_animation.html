@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><style>
+        .animation{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            position: relative;
+            animation: animation;
+            -webkit-animation: animation;
+            animation-duration: 12s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-delay: 5s;
+
+        }
+        @keyframes animation{
+            0%{background-color:aqua;left:0px;top:0px}
+            25%{background-color:red;left:300px;top:0px}
+            50%{background-color:black;left:300px;top:300px}
+            75%{background-color:rgb(246, 119, 174);left:0px;top:300px}
+            100%{background-color:aqua;left:0px;top:0px}
+        }
+    </style>
+</head>
+<body>
+    <div class="animation">
+
+    </div>
+</body>
+</html>
