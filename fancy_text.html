@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text-container{
+            display: flex;
+            justify-content: center;
+            font-size: 70px;
+            letter-spacing: 4px;
+            font-weight: 900;
+            perspective: 50px;
+        }
+        .text-container > b{
+            height: 80px; 
+            box-shadow: 2px 5px 5px gray;
+            background: linear-gradient(to right,rgb(85, 85, 136),orange,red,black);
+            background-clip: text;
+            color: transparent;
+            transform-origin:top;
+            transform: rotate(-85deg);
+            animation: getup 10s infinite;
+        }
+        .text-container > b:nth-child(1){
+            animation-delay: 0.1s;
+        }
+         .text-container > b:nth-child(2){
+            animation-delay: 0.40s;
+        }
+         .text-container > b:nth-child(3){
+            animation-delay: 0.70;
+         }    
+         .text-container > b:nth-child(4){
+            animation-delay: 0.90s;
+        }
+        @keyframes getup{
+            from{transform:rotateY(85deg)}
+            10%,50%{transform: rotateY(0)}
+            60%,to{transform: rotateY(85deg)}
+
+        }
+    </style>
+</head>
+<body>
+    <div class="text-container">
+        <b>D</b> <b>E</b> <b>V</b> <b>A</b>
+    </div>
+</body>
+</html>
