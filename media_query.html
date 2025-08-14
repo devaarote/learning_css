@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    @media (min-width:320px) and (max-width:767px){
+        body{
+            font-size: 20px;
+            background-color: red;
+        }
+        p{
+            display: none;
+        }
+        h1,h3{
+            color: white;
+        }
+        .img1{
+            display: none;
+        }
+    }
+    @media (min-width:767px) and (max-width:1024px){
+        body{
+           
+            background-color: rgb(46, 204, 32);
+        }
+    }
+     @media (min-width:1024px) and (max-width:1124px){
+        body{
+           
+            background-color: rgb(52, 17, 228);
+        }
+        }    
+     @media (min-width:1124px) and (max-width:1824px){
+        body{
+          
+            background-color: rgb(17, 178, 222);
+        }
+        }        
+        @media (min-width:1824px) and (max-width:2400px){
+        body{
+           
+            background-color: rgb(228, 240, 14);
+        }
+        }    
+ @media (min-width:1024px) and (max-width:1124px){
+        body{
+            
+            background-color: rgb(52, 17, 228);
+        }
+        }    
+        
+        @media (min-width:850px) and (max-width:950px){
+        body{
+            
+            background-color: rgb(223, 8, 187);
+        }
+        h1,h3{
+            color: aqua;
+            font-size: 100px;
+
+        }
+        .img{
+            display: none;
+
+        }
+        }    
+    </style>
+</head>
+<body>
+    <h1>CSS Media Query</h1>
+    <p>the background will change according to the viewport width change.</p><br><br>
+    <img class="img1" src="images/gandhiji.jpg" alt="social">
+
+    <h3>Smartphones - <span>from 320px and up</span>(min-width:320px)</h3>
+    <p>BLUE</p>
+    <br>
+
+    <h3>tablet, ipads (potrait) - <span class="detail">from 768px and up</span>(min-width:728px)</h3>
+    <p>GRENN</p>
+    <br>
+
+        <h3>Tablets, ipads(landcase) - <span class="detail">from 1024px and up</span>(min-width:1024px)</h3>
+    <p>YELLOW</p>
+    <br>
+
+    <h3>Destop, Laptops - <span class="detail">from 1124px and up</span>(min-width:1124px)</h3>
+    <p>ORANGE</p>
+    <br>
+
+     <h3>large scale - <span class="detail">from 1824px and up</span>(min-width:1824px)</h3>
+    <p>AUQA(zoomout if needed [cltr & -]) </p>
+    <br>
+
+    <h3>Coustom media Query - <span class="detail">from 850px and up</span>(min-width:950px)</h3>
+    <p>RED(zoomout if needed [cltr & -]) </p>
+    <br>
+</body>
+</html>

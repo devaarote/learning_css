@@ -28,13 +28,32 @@
 
 
         }  
+        .swing2{
+            animation: swing2 1s ease-in-out infinite alternate;
+            transform-origin: top center;
+            position: relative;
+        }
+        .swing2 img{
+            width: 300px;
+            height: 300px;
+            box-shadow: 2px 2px 2px;
+            
+
+
+        }
+        @keyframes swing2{
+            0%{transform: rotate(5deg)}
+            100%{transform: translate(-5deg)}
+
+
+        }  
     </style>
 </head>
 <body>
     <div class="swing">
         <img src="images/gandhiji.jpg" alt="gandhiji">
     </div>
-    <div class="swing">
+    <div class="swing2">
         <img src="images/gandhiji.jpg">
     </div>
 </body>
