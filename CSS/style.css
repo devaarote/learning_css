@@ -31,3 +31,26 @@ p{
             padding: 30px;
             margin: 20px;
         }
+
+        /* flex-items */
+
+        .flex-item{
+            background-color: cadetblue;
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            color: black;
+            font-size: 50px;
+            justify-content:center;
+            display: flex;
+            align-items: center;
+            
+
+        }
+        .flex-container{
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+            justify-content:center;
+            margin: 10px;
+        }

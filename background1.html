@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            color: white;
+            border: white;
+        }
+        .linear{
+            height: 300px;
+            background: linear-gradient(to top,red,white);
+            border: white;
+            margin: 10px;
+
+        }
+        .radial{
+            height: 300px;
+            background:radial-gradient(circle,blue,red,green) ;
+            margin: 10px;
+
+        }
+        .conical{
+            height: 300px;
+            background:conic-gradient(from 90deg,blue,red,green) ;
+            margin: 10px;
+
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="linear">linear</div>
+    <div class="radial">Radial</div>
+    <div class="conical">Conical</div>
+
+</body>
+</html>
